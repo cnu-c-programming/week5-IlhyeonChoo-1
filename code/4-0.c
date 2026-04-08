@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 void echo() {
-  char buf[5];
-  scanf("%4s", buf);
+  char* buf;
+  scanf("%s", buf);
   printf("%s\n", buf);
 }
 
