@@ -3,7 +3,15 @@
 long my_strtol(char* str, char** endptr) {
   long res = 0;
 
-  while () {
+  while (*str >= 48 && *str <= 57) {
+    res *= 10;
+    res += *str - 48;
+
+    str++;
+  }
+
+  if (endptr != NULL) {
+    *endptr = (char*)str;
   }
 
   return res;
