@@ -10,9 +10,9 @@ int main() {
   if (index > sizeof(arr) / sizeof(arr[0])) {
     printf("Error!\n");
     return 0;
-  } else if (index <= 0) {
+  } else if (index < 0) {
     printf("Invalid Index\n");
   } else {
-    printf("%d\n", arr[index - 1]);
+    printf("%d\n", arr[index]);
   }
 }
